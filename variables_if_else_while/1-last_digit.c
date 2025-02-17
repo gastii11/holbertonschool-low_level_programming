@@ -5,7 +5,7 @@
 
 /* betty style doc for function main goes there */
 /**
- * main - muestra el ultimo numero 
+ * main - muestra el ultimo numero
  * Description: muestra si el numero es n
  * Return: retorna 0
  */
