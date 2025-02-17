@@ -4,6 +4,11 @@
 /* more headers goes there */
 
 /* betty style doc for function main goes there */
+/**
+ * main - muestra el ultimo numero 
+ * Description: muestra si el numero es n
+ * Return: retorna 0
+ */
 int main(void)
 {
 	int n;
