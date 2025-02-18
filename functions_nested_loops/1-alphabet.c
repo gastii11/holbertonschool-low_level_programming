@@ -5,7 +5,7 @@
  */
 #include <stdio.h>
 #include "main.h"
-int main(void)
+void print_alphabet(void)
 {
 	char str[] = "abcdefghijklmnopqrstuvwxyz";
 	int i = 0;
@@ -16,5 +16,4 @@ int main(void)
 		i++;
 	}
 	_putchar('\n');
-	return (0);
 }
