@@ -1,5 +1,5 @@
 /**
- * main - va a mostrar el abecedario en minuscula
+ * print_alphabet - va a mostrar el abecedario en minuscula
  * Description: muestra todo el abecedario con _putchar
  * Return: retorna 0
  */
