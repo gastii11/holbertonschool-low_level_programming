@@ -1,3 +1,9 @@
+/**
+ * print_last_digit - imprime el ultimo numero
+ * @n: es el numero que va a chequear
+ *
+ * Return: abs(n) %10.
+ */
 #include <stdio.h>
 #include "main.h"
 #include <stdlib.h>
