@@ -5,14 +5,15 @@
  * Return: retorna 0
  */
 #include "main.h"
-#include <stdio.h>
+#include <unistd.h>
+
 void print_numbers(void)
 {
 	int n;
 
 	for (n = 0; n < 10; n++)
 	{
-		putchar(n + '0');
+		_putchar(n + '0');
 	}
-	putchar('\n');
+	_putchar('\n');
 }
