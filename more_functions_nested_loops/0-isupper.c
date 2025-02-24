@@ -5,10 +5,10 @@
  * Return: return 1 si es es, return 0 en lo contario
  */
 #include "main.h"
-
+#include <stdio.h>
 int _isupper(int c)
 {
-	if (c >= 'A' && <= 'Z')
+	if (c >= 'A' && c <= 'Z')
 	{
 		return (1);
 	}
