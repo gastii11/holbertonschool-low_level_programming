@@ -1,6 +1,6 @@
 /**
  * reset_to_98 - cambio de valor a 98
- * @*n - caracter
+ * @n: caracter
  */
 #include "main.h"
 #include <stdio.h>
