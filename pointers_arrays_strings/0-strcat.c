@@ -1,7 +1,7 @@
 /**
  * _strcat - concatene dos cadenas
- * @dest - puntero
- * @src - puntero
+ * @dest: puntero
+ * @src: puntero
  *
  * Return: retorna 0
  */
