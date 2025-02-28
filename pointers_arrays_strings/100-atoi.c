@@ -1,29 +1,34 @@
+#include "main.h"
+#include <limits.h>
 /**
  * _atoi - cadena a entero
  * @s: puntero
  *
- * Return: retorna num * sing
+ * Return: retorn g * j
  */
-#include "main.h"
 int _atoi(char *s)
 {
-	int sing = 1;
-	unsigned int num = 0;
-	int digit_found = 0;
+	int g = 0;
+	int j = 1;
+	int i = 0;
 
-	while (*s)
+	while (s[i] != '\0' && (s[i] < '0' || s[i] > '9'))
 	{
-		if (*s == '-')
-			sing *= -1;
-		else if (*s >= 0 && *s <= 9)
-		{
-			num = num * 10 + (*s - 0);
-			digit_found = 1;
-		}
-		else if (digit_found)
-			break;
-		s++;
+		if (s[i] == '-')
+			j *= -1;
+		i++;
 	}
 
-	return (num * sing);
+	while (s[i] != '\0' && (s[i] >= '0' && s[i] <= '9'))
+	{
+		if (g > INT_MAX / 10 ||
+			(g == INT_MAX / 10 && (s[i] - '0') > INT_MAX % 10))
+		{
+			return (j == 1 ? INT_MAX : INT_MIN);
+		}
+		g = g * 10 + (s[i] - '0');
+		i++;
+	}
+
+	return (g * j);
 }
