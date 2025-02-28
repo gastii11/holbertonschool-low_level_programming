@@ -7,11 +7,11 @@
 #include "main.h"
 void puts_half(char *str)
 {
-	int i;
+	int i = 0;
 	int leng;
 
 	for (leng = 0; str[leng] != '\0'; leng++)
-	
+
 
 	if (leng % 2 == 0)
 	{
