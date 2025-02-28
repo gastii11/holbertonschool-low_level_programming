@@ -6,14 +6,13 @@
  */
 #include "main.h"
 #include <ctype.h>
-#include <stddef.h>
 char *string_toupper(char *str)
 {
 	int i = 0;
 
-	if (str == NULL)
+	if (str[i] == '\0')
 	{
-		return (NULL);
+		return ('\0');
 	}
 
 	for (i = 0; str[i] != '\0'; i++)
