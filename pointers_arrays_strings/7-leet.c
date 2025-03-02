@@ -7,21 +7,23 @@
 #include "main.h"
 char *leet(char *str)
 {
-	char leet_chars[] = "aAeEoOtTLl";
-	char leet_replacements[] = "4433007711";
-	int i, j;
+	char *ptr = str;
+	char leet_map[] = "aAeEoOtTlL";
+	char leet_replace[] = "4433007711";
+	int i;
 
-	for (i = 0; str[i] != '\0'; i++)
+	while (*ptr != '\0')
 	{
-		for (j = 0; leet_chars[j] != '\0'; j++)
+		for (i = 0; leet_map[i] != '\0'; i++)
 		{
-			if (str[i] == leet_chars[j])
+			if (*ptr == leet_map[i])
 			{
-				str[i] = leet_replacements[j];
+				*ptr = leet_replace[i];
+				break;
 			}
-			break;
-
 		}
+		ptr++;
 	}
+
 	return (str);
 }
