@@ -1,7 +1,7 @@
 /**
  * _memcpy - funcion
  * @dest: destino
- * @scr: origen
+ * @src: origen
  * @n: variable
  *
  * Return: retorna dest
