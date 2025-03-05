@@ -1,0 +1,24 @@
+/**
+ * _pow_recursion - funcion para potencia
+ * @x: x entero
+ * @y: y entero
+ *
+ * Return: retorna potencia
+ */
+#include "main.h"
+int _pow_recursion(int x, int y)
+{
+	if (y == 0)
+	{
+		return (1);
+	}
+
+	if (y < 0)
+	{
+		return (-1);
+	}
+	else
+	{
+		return (x * _pow_recursion(x, y - 1));
+	}
+}
