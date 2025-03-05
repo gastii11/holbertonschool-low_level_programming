@@ -2,7 +2,7 @@
  * _sqrt_helper - funcion auxiliar
  * @n: variable
  * @x: variable
- * 
+ *
  * Return: retorna n, x + 1
  */
 #include "main.h"
@@ -12,11 +12,11 @@ int _sqrt_helper(int n, int x)
 	{
 		return (-1);
 	}
-    if (x * x == n)
-    {
-	    return (x);
-    }
-    return (_sqrt_helper(n, x + 1));
+	if (x * x == n)
+	{
+		return (x);
+	}
+	return (_sqrt_helper(n, x + 1));
 }
 
 /**
