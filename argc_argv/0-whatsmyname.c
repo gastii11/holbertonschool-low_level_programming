@@ -1,7 +1,7 @@
 /**
  * main - funcion
  * @argv: vector de argumentos
- * 
+ * @argc: recuentro de argumento
  * Return: retorna 0
  */
 #include "main.h"
