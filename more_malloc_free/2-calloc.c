@@ -29,7 +29,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 	char_ptr = (char *)ptr;
 	for (i = 0; i < total_size; i++)
-	{	
+	{
 		char_ptr[i] = 0;
 	}
 
