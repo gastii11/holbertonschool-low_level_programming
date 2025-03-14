@@ -10,8 +10,9 @@
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
+	char *char_ptr;
 	void *ptr;
-	unsigned int total_size;
+	unsigned int total_size, i = 0;
 
 	if (nmemb == 0 || size == 0)
 	{
@@ -26,7 +27,11 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		return (NULL);
 	}
 
-	memset(ptr, 0, total_size);
+	char_ptr = (char *)ptr;
+	for (i = 0; i < total_size; i++)
+	{	
+		char_ptr[i] = 0;
+	}
 
 	return (ptr);
 }
