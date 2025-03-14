@@ -1,3 +1,16 @@
+int _strlen(char *str)
+{
+	int i = 0;
+
+	(void) str;
+
+	while (str[i] != '\0')
+		i++;
+	return i;
+}	
+
+
+
 /**
  * string_nconcat - funcion
  * @s1: cadena
@@ -23,8 +36,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		s2 = "";
 	}
 
-	len1 = strlen(s1);
-	len2 = strlen(s2);
+	len1 = _strlen(s1);
+	len2 = _strlen(s2);
 
 	if (n >= len2)
 		n = len2;
