@@ -1,7 +1,7 @@
 #include "dog.h"
 #include <stddef.h>
 /**
- * void init_dog - funcion
+ * init_dog - funcion
  * @d: puntero
  * @name: puntero
  * @age: entero
