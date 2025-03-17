@@ -39,11 +39,11 @@ int op_mul(int a, int b)
 }
 
 /**
- * op_div - devuelve el resultado de la división de a entre 
+ * op_div - devuelve el resultado de la división de a entr
  * @a: primer número enero
  * @b: segundo número enter
  *
- * Return: división de a entre 
+ * Return: división de a entr
  */
 int op_div(int a, int b)
 {
