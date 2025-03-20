@@ -25,7 +25,10 @@ void print_all(const char * const format, ...)
 	while (format && format[i])
 	{
 		if (has_format)
+		{	
 			printf(", ");
+		}
+	
 		
 		switch (format[i])
 		{
