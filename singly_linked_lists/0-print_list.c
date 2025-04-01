@@ -3,7 +3,7 @@
 #include "lists.h"
 
 /**
- * imprimir_lista - Imprime todos los elementos de una lista list_t.
+ * print_list - Imprime todos los elementos de una lista list_t.
  * @h: Puntero al inicio de la lista.
  *
  * Return: Número total de nodos en la lista.
