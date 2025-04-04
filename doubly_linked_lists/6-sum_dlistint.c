@@ -1,7 +1,7 @@
 #include "lists.h"
 #include <stdlib.h>
 /**
- * suma_dlistint - Calcula la suma de los datos (n) en una lista enlazada
+ * sum_dlistint - Calcula la suma de los datos (n) en una lista enlazada
  * @head: Puntero al inicio de la lista
  *
  * Return: La suma de todos los datos en la lista, o 0 si está vacía
